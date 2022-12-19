@@ -21,7 +21,7 @@ function App() {
 
   const getMovieRequest = async (searchText) => {
     setLoading(true)
-    const url = `http://www.omdbapi.com/?s=${searchText}&apikey=fbb9ad67`;
+    const url = `https://www.omdbapi.com/?s=${searchText}&apikey=fbb9ad67`;
 
     const response = await fetch(url);
     const responseJson = await response.json();
@@ -34,7 +34,7 @@ function App() {
 
   const getMovies = async () => {
     setLoading(true)
-    const url = `http://www.omdbapi.com/?s=inte&apikey=fbb9ad67`;
+    const url = `https://www.omdbapi.com/?s=inte&apikey=fbb9ad67`;
 
     const response = await fetch(url);
     const responseJson = await response.json();
@@ -47,7 +47,7 @@ function App() {
 
   const getSeries = async () => {
     setLoading(true)
-    const url = `http://www.omdbapi.com/?s=legend&apikey=fbb9ad67`;
+    const url = `https://www.omdbapi.com/?s=legend&apikey=fbb9ad67`;
 
     const response = await fetch(url);
     const responseJson = await response.json();
